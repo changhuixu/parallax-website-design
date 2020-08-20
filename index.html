@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the World | Landing Page Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">World</a>
+        <div class="toggle"></div>
+      </header>
+      <img src="bg.jpg" class="bg" />
+      <img src="bird.png" class="bird" />
+      <div class="content">
+        <h2>
+          We can save the
+          <span>Earth</span>
+        </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Exercitationem porro saepe voluptate adipisci aliquid voluptas iusto
+          sit dolorem. Ea rerum placeat blanditiis reprehenderit nostrum
+          laudantium maiores aliquam cum, veritatis quasi.
+        </p>
+        <a href="#">Join Us</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#">
+            <img src="facebook.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="twitter.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="instagram.png" alt="" />
+          </a>
+        </li>
+      </ul>
+      <div class="textBlocks">
+        <div class="block">
+          <h3>Defenders of Earth</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            veritatis quibusdam tempore, quisquam dolor suscipit natus nihil
+            officiis earum fugit nam! Corporis aut molestiae animi!
+            Reprehenderit sed aspernatur voluptatum explicabo.
+          </p>
+        </div>
+        <div class="block">
+          <h3>How to Save Water</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            veritatis quibusdam tempore, quisquam dolor suscipit natus nihil
+            officiis earum fugit nam! Corporis aut molestiae animi!
+            Reprehenderit sed aspernatur voluptatum explicabo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      document.addEventListener('mousemove', function (e) {
+        const bg = document.querySelector('.bg');
+        const bird = document.querySelector('.bird');
+        const content = document.querySelector('.content');
+
+        bg.style.width = 100 + e.pageX / 100 + '%';
+        bg.style.height = 100 + e.pageX / 100 + '%';
+
+        bird.style.right = 100 + e.pageX / 2 + 'px';
+
+        content.style.left = 100 + e.pageX / 2.5 + 'px';
+      });
+    </script>
+  </body>
+</html>
